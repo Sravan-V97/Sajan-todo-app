@@ -1,0 +1,96 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+     background-image:linear-gradient(to top, #ff512f, #dd2476);
+    width: 100%;
+    min-height: 100vh;
+
+} 
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  }
+
+  .add-btn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+.clr-Io{
+    background-color: #614caf;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+ .maincontainer{
+    position: absolute;
+    left: 500px;
+    top: 120px;
+    border-radius: 5%;
+    border-top: 1px #ff512f;
+   
+}
+
+.trash-btn,
+.complete-btn
+{
+    background: #FF512F ;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.trash-btn,
+.complete-btn:focus
+{
+    outline: none;
+ 
+  box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25) !important;
+}
+.complete-btn
+{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.edit-btn{
+    background-color: #534caf;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.todo-item
+{
+    padding:0rem 0.5rem;
+}
+
+.completed
+{
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+

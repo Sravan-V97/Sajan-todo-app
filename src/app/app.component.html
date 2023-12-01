@@ -1,0 +1,21 @@
+
+<div class = "maincontainer">
+  <h5>Todo List</h5>
+  <div class="todoCard">
+    
+      <input type="text"  #tasks placeholder="Enter the tasks" >
+      <button class ="add-btn" (click)="addTodo(tasks.value)">Add</button>
+    
+</div>
+
+<div style="margin: 19px;">
+  <ul *ngFor = "let list of taskList">
+    <li [ngClass]="list.completed?'todo-item completed':'todo-item'">{{list.name}}  
+      <button class="complete-btn" [disabled]="list.completed"(click)="CompletedTask(list.id)">Done</button>
+      <button class="trash-btn " (click)="removeList(list.id)">Dlt</button>
+      <button class ="edit-btn" (click) ="updateTask(list.name)">Edit</button>
+    </li>
+  </ul>
+</div>
+</div>
+
